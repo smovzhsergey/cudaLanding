@@ -1,0 +1,547 @@
+﻿
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Rosa Marena;
+  src:url('../fonts/y0agLJgZ.ttf');
+}
+
+body {
+  font-size: 1em;
+  font-family: "Lucida Sans Unicode";
+  color: #fff;
+
+}
+
+img{
+	border:none;
+}
+#siteWrapper {
+  margin: 0 auto;
+  position: relative;
+}
+
+#overlay{
+	background: rgba(0,0,0,0.8);
+	position: fixed;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	z-index:3;
+}
+
+#lightbox{
+	position:fixed;
+	z-index:4;
+
+}
+
+
+p.description{
+	background: rgba(0,0,0,0.8);
+	border-radius:8px;
+	color:#fff;
+	text-align:center;
+	padding:5px 20px;
+	position:fixed;
+	z-index:8;
+}
+
+.clear {
+  clear: both;
+  content: "";
+  display: block;
+}
+/******************************* HEADER START ********************************/
+header {
+  background: #87509c;
+  padding-bottom: 60px;
+  width: 100%;
+  position: relative;
+}
+header a {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+}
+header .logo {
+  font-size: 3em;
+  font-weight: bold;
+  font-family: "Rosa Marena";
+  float: left;
+  margin: 40px 8%;
+}
+header h1 {
+  margin: 0 auto;
+  clear: both;
+  width: 62.5%;
+  text-align: center;
+}
+header .button {
+  margin: 50px auto;
+  width: 236px;
+}
+header .button p {
+  background: #eb7d4b;
+  border-radius: 5px; 
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  padding: 20px 50px;
+  text-transform: uppercase;
+  display: inline-block;  
+  box-shadow: 0 6px #BB3B00;
+}
+header .button p:hover {
+  box-shadow: 0 4px #BB3B00;
+  top: 2px;
+}
+
+header .button p:active {
+  box-shadow: 0 0px #BB3B00;
+  top: 6px;
+}
+header:after {
+  position: absolute;
+  bottom: -15px;
+  right: 10%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #87509c;
+  content: "";
+  z-index: 2;
+  transform: rotate(45deg);
+}
+#mainNavy {
+  float: right;
+  margin: 40px 8%;
+}
+#mainNavy a {
+  font-size: 0.875em;
+  padding: 8px 22px;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+#mainNavy a:hover {
+  background: #643a79;
+  border-radius: 7px;
+}
+.close {
+  display: none;
+  position: absolute;
+  right: 120px;
+  top: -2px;
+  width: 30px;
+  height: 30px;
+  background: #666;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+#menuIcon {
+  background: url(../img/menu_icon.png) no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin: 30px 0 0 0;
+  display: none;
+}
+/******************************* HEADER FINISH ********************************/
+section {
+  padding: 80px 0;
+  position: relative;
+}
+section h2 {
+  text-transform: uppercase;
+  font-size: 2em;
+  margin: 0 auto;
+  text-align: center;
+}
+section h2:after {
+  background: #14a58c;
+  content: "";
+  display: block;
+  height: 3px;
+  margin: 10px auto 0;
+  width: 60px;
+}
+section p {
+  margin: 10px auto;
+  text-align: center;
+  width: 60%;
+}
+section div.container {
+  margin: 50px auto 0;
+  width: 1004px;
+}
+section div.container:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+section:before,
+section:after {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  content: "";
+  transform: rotate(45deg);
+}
+section:before {
+  top: -15px;
+  left: 10%;
+}
+section:after {
+  z-index: 2;
+  bottom: -15px;
+  right: 10%;
+}
+article {
+  float: left;
+  margin-right: 30px;
+  padding: 200px 5px 0 5px;
+  width: 210px;
+}
+article h3 {
+  font-size: 1.6em;
+  text-align: center;
+  text-transform: uppercase;
+}
+article p {
+  text-align: center;
+  width: 100%;
+}
+/******************************* SERVICES START *******************************/
+#ourServices {
+  background: #17c2a4;
+}
+#ourServices article.service {
+  transition: all 0.4s;
+}
+#ourServices article.service:hover {
+  box-shadow: 1px 1px 0 rgba(3, 60, 50, 0.7), inset -1px -1px 0 rgba(3, 60, 50, 0.7), -1px -1px 0 rgba(3, 60, 50, 0.7),  2px 2px 0px rgba(3, 60, 50, 0.7), 3px 3px 0px rgba(3, 60, 50, 0.7), 4px 4px 0px rgba(3, 60, 50, 0.7), 5px 5px 0px rgba(3, 60, 50, 0.7), 6px 6px 0px rgba(3, 60, 50, 0.7), 7px 7px 0px rgba(3, 60, 50, 0.7);
+  cursor: pointer;
+
+}
+#ourServices .branding {
+  background: url('../img/flag.png') no-repeat center 10px;
+}
+#ourServices .design {
+  background: url('../img/pencil.png') no-repeat center 10px;
+}
+#ourServices .development {
+  background: url('../img/gear.png') no-repeat center 10px;
+}
+#ourServices .rocketScince {
+  background: url('../img/rocket.png') no-repeat center 10px;
+  margin-right: 15px;
+}
+#ourServices:before {
+  background: #17c2a4;
+}
+#ourServices:after {
+  background: #17c2a4;
+}
+/******************************* SERVICES FINISH *******************************/
+/******************************** OUR TEAM START *******************************/
+#ourTeam {
+  background: #e7f1f8;
+  color: #3c4761;
+}
+#ourTeam h2:after {
+  background: #c8d9e5;
+}
+#ourTeam .memberTeam {
+  padding-top: 0px;
+  text-align: center;
+}
+#ourTeam .memberTeam img {
+  width: 160px;
+  margin: 30px 15px;
+  height: 160px;
+}
+#ourTeam .memberTeam h3 + p {
+  color: #44bee8;
+  font-size: 0.8em;
+  margin-top: 0;
+}
+#ourTeam .memberTeam .social {
+  display: inline-block;
+  margin: 0 auto;
+}
+#ourTeam .memberTeam .social a {
+  margin: 0 5px;
+  padding: 5px 16px;
+  transition: all 0.4s ease-in;
+}
+#ourTeam .memberTeam .social a:hover {
+  transform:rotate(360deg);
+}
+#ourTeam .last {
+  margin-right: 0px;
+}
+#ourTeam a.facebook {
+  background: url('../img/soc_facebook.png') no-repeat center center;
+}
+#ourTeam a.twitter {
+  background: url('../img/soc_twitter.png') no-repeat center center;
+}
+#ourTeam a.linkedin {
+  background: url('../img/soc_linkedin.png') no-repeat center center;
+}
+#ourTeam a.mail {
+  background: url('../img/soc_mail.png') no-repeat center center;
+}
+#ourTeam:before {
+  background: #e7f1f8;
+}
+#ourTeam:after {
+  background: #e7f1f8;
+}
+/***************************** OUR TEAM FINISH *******************************/
+/******************************* SKILLS START *******************************/
+#skills {
+  background: #fff;
+  color: #3c4761;
+}
+#skills h2:after {
+  background: #3c4761;
+}
+#skills .skill {
+  padding-top: 20px;
+  text-align: center;
+}
+#skills .skill span {
+  display: inline-block;
+  height: 160px;
+  width: 160px;
+  font-size: 3em;
+  line-height: 160px;
+}
+#skills .skill p {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#skills .web {
+  background: url('../img/web.png') no-repeat center top;
+}
+#skills .html {
+  background: url('../img/html.png') no-repeat center top;
+}
+#skills .graphic {
+  background: url('../img/graphic.png') no-repeat center top;
+}
+#skills .ui {
+  background: url('../img/ui.png') no-repeat center top;
+  margin-right: 0px;
+}
+#skills:before {
+  background: #fff;
+}
+#skills:after {
+  background: #fff;
+}
+/******************************* SKILLS FINISH *******************************/
+/****************************** PORTFOLIO START ******************************/
+#portfolio {
+  background: #ffdd99;
+  color: #393939;
+}
+#portfolio div.container {
+  margin-top: 50px;
+  width: 810px;
+}
+#portfolio div.container a {
+  display: inline-block;
+  margin: 15px;
+}
+#portfolio img {
+  max-width: 100%;
+}
+#portfolio h2:after {
+  background: #e5c37f;
+}
+#portfolio nav {
+  width: 380px;
+  float: none;
+  margin: 40px auto;
+}
+#portfolio nav a {
+  background: #e5c37f;
+  border-radius: 7px;
+  color: #393939;
+  margin: 0 10px;
+  text-decoration: none;
+}
+#portfolio nav a:hover {
+  background: #fff;
+}
+#portfolio nav a:first-child {
+  background: #fff;
+}
+#portfolio:before {
+  background: #ffdd99;
+}
+#portfolio:after {
+  background: #ffdd99;
+}
+/***************************** PORTFOLIO FINISH *******************************/
+
+/****************************** PEOPLESAY START *******************************/
+#peopleSay {
+  background: #d74680;
+  color: #fff;
+}
+#peopleSay h2:after {
+  background: #b73c6d;
+}
+#peopleSay div.container {
+  margin: 20px auto 0;
+}
+#peopleSay .say {
+  margin: 50px 15px 0;
+  padding: 0;
+  width: 470px;
+}
+#peopleSay .say img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 0 0 15px 0;
+}
+#peopleSay .say div {
+  margin-left: 120px;
+}
+#peopleSay .say p {
+  font-style: italic;
+  text-align: left;
+}
+#peopleSay .say h3 {
+  margin-top: 20px;
+  text-align: left;
+}
+#peopleSay .say span {
+  color: #fcd597;
+}
+#peopleSay:before {
+  background: #d74680;
+}
+#peopleSay:after {
+  background: #d74680;
+}
+/******************************* PEOPLESAY FINISH *******************************/
+/******************************** CONTACT START *********************************/
+#contact {
+  background: #3c5499;
+  color: #fff;
+}
+#contact h2:after {
+  background: #273a71;
+}
+#contact form {
+  margin: 30px auto;
+  width: 798px;
+}
+#contact form input,
+#contact form textarea {
+  background: #273a71;
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 1em;
+  padding: 10px 2%;
+  outline:none;
+}
+#contact form input[type="text"] {
+  width: 45%;
+  margin-bottom: 20px;
+}
+#contact form input[name="name"] {
+  float: left;
+}
+#contact form input[name="mail"] {
+  float: right;
+}
+#contact form input[type="submit"] {
+  background: #30bae7;
+  border-radius: 5px;
+  box-shadow: 0 6px #0097C8;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  margin: 40px auto 0;
+  padding: 20px 50px;
+  position:relative;
+  width: 200px;
+}
+#contact form input[type="submit"]:hover {
+  box-shadow: 0 4px #0097C8;
+  top: 2px;
+}
+
+#contact form input[type="submit"]:active {
+  box-shadow: 0 0px #0097C8;
+  top: 6px;
+}
+#contact form textarea {
+  width: 96%;
+  font-size: 1.4em;
+  clear: both;
+  overflow-y:hidden;
+}
+#contact:before {
+  background: #3c5499;
+}
+#contact:after {
+  background: #3c5499;
+}
+/******************************** CONTACT FINISH ********************************/
+/********************************* FOOTER START *********************************/
+footer {
+  background: #273a71;
+  position:relative;
+  width: 100%;
+}
+footer p {
+  text-align: center;
+  padding: 30px 0;
+  width: 100%;
+}
+footer a {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0 1.5%;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+footer a:hover {
+  color: #30bae7;
+}
+
+footer:before {
+  position: absolute;
+  top: -15px;
+  left: 10%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #273a71;
+  content: "";
+  z-index: 2;
+  transform: rotate(45deg);
+}
+
+/******************************* FOOTER FINISH **********************************/
+
+
+

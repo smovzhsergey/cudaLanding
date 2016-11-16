@@ -1,0 +1,137 @@
+/************************* @MEDIA (MAX-WIDTH:420px) ****************************/
+@media (max-width: 420px) {
+  header {
+    overflow-x: hidden;
+    padding-bottom: 20px;
+  }
+  header .logo {
+    font: 2em bold "Rosa Marena";
+  }
+  header h1 {
+    font-size: 1.2em;
+  }
+  header .button {
+    margin: 20px auto;
+    width: 131px;
+  }
+  header .button p {
+    padding: 10px 15px;
+    font-size: 0.8em;
+    display: inline-block;
+  }
+  #menuIcon {
+    margin-right: 30px;
+    display: block;
+    cursor: pointer;
+  }
+  #mainNavy {
+    border: 2px solid #fff;
+    float: none;
+    width: 120px;
+    position: absolute;
+    top: 0px;
+    right: -160px;
+    background: #666;
+	z-index:20;
+  }
+  #mainNavy a {
+    display: block;
+    text-align: left;
+  }
+  #mainNavy a:hover {
+    background: #222	;
+    border-radius: 0px;
+  }
+  .close {
+    display: block;
+    border: 2px solid #fff;
+    border-right: none;
+  }
+  section {
+    padding: 20px 0;
+  }
+  section div.container {
+    margin: 30px auto 0;
+    width: 90%;
+  }
+  section h2 {
+    font-size: 1.1em;
+  }
+  section p {
+    width: 90%;
+    font-size: 0.6em;
+  }
+  section:before,
+  section:after {
+    display: none;
+  }
+  article {
+    margin-bottom: 10px;
+    padding: 0;
+    width: 80%;
+  }
+  article h3 {
+    font-size: 0.9em;
+    text-align: left;
+  }
+  article p {
+    text-align: left;
+    width: 100%;
+  }
+  #ourServices .service {
+    padding: 5px;
+  }
+  #ourServices .branding,
+  #ourServices .design,
+  #ourServices .development,
+  #ourServices .rocketScince {
+    background: none;
+  }
+  #ourTeam .memberTeam {
+    width: 90%;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+  #ourTeam .memberTeam img {
+    width: 80px;
+    height: 80px;
+  }
+  #skills div.container {
+    width: 290px;
+  }
+  #skills .skill {
+    margin: 0 5px;
+    width: 135px;
+    padding: 0px;
+  }
+  #skills .skill span {
+    font-size: 1em;
+    line-height: 60px;
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+  }
+  #skills .skill p {
+    font-size: 0.7em;
+    text-align: center;
+  }
+  #portfolio div.container {
+    width: 90%;
+  }
+  #peopleSay .say div {
+    margin-left: 100px;
+  }
+  #peopleSay .say img {
+    width: 80px;
+    height: 80px;
+  }
+  #peopleSay .say h3 {
+    margin-top: 10px;
+  }
+  #peopleSay .say span {
+    font-size: 0.6em;
+  }
+  footer a {
+    font-size: 0.5em;
+  }
+}

@@ -1,0 +1,130 @@
+/************************* @MEDIA (MAX-WIDTH:1600px) ****************************/
+@media screen and (min-width: 1600px) {
+  header .cont {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  header:after {
+    display: none;
+  }
+  section:before,
+  section:after {
+    display: none;
+  }
+}
+/************************* @MEDIA (MAX-WIDTH:1023px) ****************************/
+@media (max-width: 1023px) {
+  header h1 {
+    font-size: 1.6em;
+    width: 90%;
+  }
+  header .logo {
+    font: 3em bold "Rosa Marena";
+    float: left;
+    margin: 20px 5%;
+  }
+  header .button {
+    margin: 50px auto 20px;
+  }
+  section {
+    padding: 40px 0;
+  }
+  section div.container {
+    margin: 30px auto 0;
+    width: 768px;
+  }
+  section h2 {
+    font-size: 1.6em;
+  }
+  article {
+    margin: 0 15px 50px 15px;
+    padding: 140px 5px 0 5px;
+    width: 335px;
+  }
+  article h3 {
+    font-size: 1.4em;
+  }
+  #skills .skill {
+    margin: 0 15px;
+    width: 150px;
+  }
+  #skills .skill span {
+    font-size: 2.4em;
+    line-height: 120px;
+    height: 120px;
+    width: 120px;
+    background-size: cover;
+  }
+  #skills .skill p {
+    font-size: 1.2em;
+  }
+  #portfolio div.container {
+    width: 70%;
+  }
+  #portfolio div.container a {
+    width: 30.5%;
+    margin: 5px 1%;
+  }
+  #peopleSay .say {
+    width: 90%;
+  }
+  #contact form {
+    width: 580px;
+  }
+  footer a {
+    font-size: 1em;
+  }
+}
+/************************* @MEDIA (MAX-WIDTH:800px) ****************************/
+@media (max-width: 800px) {
+  header .button {
+    margin: 50px auto 20px;
+    width: 196px;
+  }
+  header .button p {
+    padding: 20px 30px;
+  }
+  header #mainNavy a {
+    font-size: 0.8em;
+    padding: 8px 14px;
+  }
+  section div.container {
+    width: 640px;
+  }
+  section h2 {
+    font-size: 1.6em;
+  }
+  article {
+    width: 275px;
+  }
+  article h3 {
+    font-size: 1.4em;
+  }
+  article p {
+    text-align: center;
+    width: 100%;
+  }
+  #skills .skill {
+    margin: 0 5px;
+    width: 140px;
+  }
+  #skills .skill span {
+    font-size: 2.0em;
+    line-height: 100px;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+  }
+  #skills .skill p {
+    font-size: 1.0em;
+  }
+  #contact form {
+    width: 580px;
+  }
+  #contact form input[type="text"] {
+    margin-bottom: 10px !important;
+  }
+  footer a {
+    font-size: 1em;
+  }
+}
